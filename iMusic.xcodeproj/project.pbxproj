@@ -13,7 +13,26 @@
 		CE468BDA23DF204000104F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE468BD823DF204000104F68 /* Main.storyboard */; };
 		CE468BDC23DF204100104F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE468BDB23DF204100104F68 /* Assets.xcassets */; };
 		CE468BDF23DF204100104F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE468BDD23DF204100104F68 /* LaunchScreen.storyboard */; };
+		CE468BE723E0184A00104F68 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE468BE623E0184A00104F68 /* MainTabBarController.swift */; };
+		CE468BE923E019DC00104F68 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE468BE823E019DC00104F68 /* SearchViewController.swift */; };
+		CE468BEB23E04B3600104F68 /* TrackModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE468BEA23E04B3600104F68 /* TrackModels.swift */; };
+		CE468BEE23E05E8C00104F68 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE468BED23E05E8C00104F68 /* Alamofire.framework */; };
+		CE468BEF23E05E8C00104F68 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE468BED23E05E8C00104F68 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE468BF023E05E8C00104F68 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE468BEF23E05E8C00104F68 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE468BCF23DF204000104F68 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +43,10 @@
 		CE468BDB23DF204100104F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE468BDE23DF204100104F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE468BE023DF204100104F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE468BE623E0184A00104F68 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CE468BE823E019DC00104F68 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CE468BEA23E04B3600104F68 /* TrackModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModels.swift; sourceTree = "<group>"; };
+		CE468BED23E05E8C00104F68 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE468BEE23E05E8C00104F68 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +66,7 @@
 			children = (
 				CE468BD123DF204000104F68 /* iMusic */,
 				CE468BD023DF204000104F68 /* Products */,
+				CE468BEC23E05E8C00104F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +83,9 @@
 			children = (
 				CE468BD223DF204000104F68 /* AppDelegate.swift */,
 				CE468BD423DF204000104F68 /* SceneDelegate.swift */,
+				CE468BEA23E04B3600104F68 /* TrackModels.swift */,
+				CE468BE623E0184A00104F68 /* MainTabBarController.swift */,
+				CE468BE823E019DC00104F68 /* SearchViewController.swift */,
 				CE468BD623DF204000104F68 /* ViewController.swift */,
 				CE468BD823DF204000104F68 /* Main.storyboard */,
 				CE468BDB23DF204100104F68 /* Assets.xcassets */,
@@ -65,6 +93,14 @@
 				CE468BE023DF204100104F68 /* Info.plist */,
 			);
 			path = iMusic;
+			sourceTree = "<group>";
+		};
+		CE468BEC23E05E8C00104F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE468BED23E05E8C00104F68 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +113,8 @@
 				CE468BCB23DF204000104F68 /* Sources */,
 				CE468BCC23DF204000104F68 /* Frameworks */,
 				CE468BCD23DF204000104F68 /* Resources */,
+				CE468BF023E05E8C00104F68 /* Embed Frameworks */,
+				CE468BF123E05EC300104F68 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,6 +171,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE468BF123E05EC300104F68 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE468BCB23DF204000104F68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +199,9 @@
 			files = (
 				CE468BD723DF204000104F68 /* ViewController.swift in Sources */,
 				CE468BD323DF204000104F68 /* AppDelegate.swift in Sources */,
+				CE468BE923E019DC00104F68 /* SearchViewController.swift in Sources */,
+				CE468BEB23E04B3600104F68 /* TrackModels.swift in Sources */,
+				CE468BE723E0184A00104F68 /* MainTabBarController.swift in Sources */,
 				CE468BD523DF204000104F68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +348,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HNL37WZ78;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +370,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HNL37WZ78;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
